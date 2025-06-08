@@ -1,0 +1,95 @@
+/* Global reset and box-sizing for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #dbe6f6, #164cbf);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.To-Do-List {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+}
+
+.To-Do-List h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.To-Do-List input[type='text'] {
+    width: 70%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border 0.2s ease;
+}
+
+.To-Do-List input[type='text']:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.To-Do-List button {
+    padding: 10px 14px;
+    margin-left: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.To-Do-List button:hover {
+    background-color: #0056b3;
+}
+
+ol {
+    margin-top: 25px;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #e2e6ea;
+}
+
+.delete-button {
+    color: #3535dc;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
